@@ -1,0 +1,27 @@
+<!--pages/wangyiyun/wangyiyun.wxml-->
+<!-- <view class='header'>猫眼电影</view> -->
+<view class='nav'>
+
+  <view class='nav-left'>
+    <button bindtap='clickre'>热映</button>
+  </view>
+
+  <view class='nav-right'>
+    <button bindtap='clickdai'>待映</button>
+  </view>
+</view>
+<view>
+  <block wx:key="{{list.id}}" wx:for="{{list}}">
+    <view class='gd'>
+      <view class='gd-right'>
+        <image bindtap='clickimg' id="{{item._id}}" src="http://127.0.0.1:3000{{item.img}}"></image>
+        <view class='messege'>{{item.name}}</view>
+      </view>
+      <view class='gd-left'>
+        <button id='btn'>购票</button>
+      </view>
+    </view>
+
+
+  </block>
+</view>

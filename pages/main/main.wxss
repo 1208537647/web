@@ -1,0 +1,12 @@
+/* pages/main/main.wxss */
+button{
+  /* size: 2rem */
+  width: 2rem;
+   display: inline-block; 
+  /* display: flex; */
+}
+label{
+  text-align: center;
+  line-height: 2rem;
+  height: 2rem;
+}

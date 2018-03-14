@@ -1,0 +1,16 @@
+<!--pages/main/main.wxml-->
+<text>pages/main/main.wxml</text>
+<view>
+  <text>{{wx.getSystemInfoSync}}</text>
+</view>
+<view>
+  <text>{{wx.makePhoneCall}}</text>
+  <text>123</text>
+  <button>22{{wx.showToast}}</button>
+  <button bindtap='clickadd'>+</button>
+  <label>{{cc}}</label>
+  <button bindtap='clickspa'>-</button>
+ 
+
+
+</view>

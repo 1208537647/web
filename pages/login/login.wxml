@@ -1,0 +1,13 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<view>
+  <form bindsubmit="formSubmit">
+    <label>账号：
+      <input bindinput='shuruacc' type='text' name="acc"></input>
+    </label>
+    <label>密码：
+      <input bindinput='shurupwd' name="pwd" type='text'></input>
+    </label>
+    <button formType="submit" bindtap='clickbtn'>登录</button>
+  </form>
+</view>

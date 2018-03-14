@@ -1,0 +1,40 @@
+<block wx:key="{{list1.id}}" wx:for="{{list1}}">
+  <view class='div'>
+    <view class='div1'>
+
+      <view class='left'>
+        <image class='xqimg' bindtap='clickimg' id="{{item._id}}" src="http://127.0.0.1:3000{{item.img}}"></image>
+      </view>
+      <view class='right'>
+        <view class='messege'>{{item.name}}</view>
+        <view>{{item.score}}</view>
+        <view>{{item.type}}</view>
+        <view>{{item.area}} / {{item.time}}</view>
+        <view>{{item.year}}</view>
+      </view>
+
+
+    </view>
+    <view class='div2'>
+      <button id='btn1'>想看</button>
+      <button id='btn2'>评分</button>
+    </view>
+
+  </view>
+  <view class='div3'>
+    <view>{{item.comment}}</view>
+  </view>
+  <view class='div4'>
+    <view>演职人员</view>
+    <view>{{item.actor.name}}</view>
+
+  </view>
+
+</block>
+<view wx:for="{{list1[0].actor}}">
+  <view class='actor'>
+    <view class="actorname">{{item.bname}}饰{{item.name}}</view>
+    <image class='actorimg' src='http://127.0.0.1:3000{{item.img}}'></image>
+  </view>
+
+</view>
